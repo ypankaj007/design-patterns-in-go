@@ -4,5 +4,5 @@ package observer
 type Event struct {
 	// Lets take example with simple Message
 	// It depends on the requirement and implementation
-	Message string `json:"name"`
+	Message string `json:"message"`
 }
