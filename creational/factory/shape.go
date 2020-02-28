@@ -1,4 +1,4 @@
-package factory
+package main
 
 // Shape ..
 // shape interface has a common
