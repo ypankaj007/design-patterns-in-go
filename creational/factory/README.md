@@ -13,7 +13,7 @@ type Shape interface {
 }
 ```
 
-### rectangle.go // implements shape inteface
+### rectangle.go // implements shape interface
 
 ```
 import "fmt"
@@ -33,7 +33,7 @@ func GetRectangle() Shape {
 	return &rectangle{}
 }
 ```
-### square.go // implements shape inteface
+### square.go // implements shape interface
 ```
 import "fmt"
 
@@ -52,7 +52,7 @@ func GetSquare() Shape {
 	return &square{}
 }
 ```
-### circle.go // implements shape inteface
+### circle.go // implements shape interface
 
 ```
 import "fmt"
