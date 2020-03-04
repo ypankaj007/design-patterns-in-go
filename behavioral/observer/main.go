@@ -2,7 +2,6 @@ package main
 
 import (
 	"bufio"
-	ob "design-patterns-in-go/behavioral/observer"
 	"fmt"
 	"os"
 )
@@ -10,21 +9,21 @@ import (
 func main() {
 	fmt.Println("Observer application .......")
 	// Initialize notifier
-	privatePortal := ob.Initialize()
+	privatePortal := Initialize()
 	fmt.Println("Registering linkedin observer")
-	privatePortal.Attach(&ob.Linkedin{})
+	privatePortal.Attach(&Linkedin{})
 
 	fmt.Println("Registering facebook observer")
-	privatePortal.Attach(&ob.Facebook{})
+	privatePortal.Attach(&Facebook{})
 
 	fmt.Println("Registering twitter observer")
 
-	privatePortal.Attach(&ob.Twitter{})
+	privatePortal.Attach(&Twitter{})
 
 	scanner := bufio.NewScanner(os.Stdin)
 
 	for scanner.Scan() {
-		e := ob.Event{Message: scanner.Text()}
+		e := Event{Message: scanner.Text()}
 		privatePortal.Notify(e)
 	}
 	fmt.Println(scanner.Err())

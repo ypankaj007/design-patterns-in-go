@@ -1,4 +1,4 @@
-package observer
+package main
 
 // PrivatePortal defines a user's portal
 // where user will add remove the SocialMedia portals before sending posting message

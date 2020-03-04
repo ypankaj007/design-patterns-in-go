@@ -1,4 +1,4 @@
-package observer
+package main
 
 // Event oberver in the application
 type Event struct {

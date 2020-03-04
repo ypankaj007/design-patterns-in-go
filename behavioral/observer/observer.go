@@ -1,4 +1,4 @@
-package observer
+package main
 
 // Observer is an interface
 // Who needs to nofify will implement
